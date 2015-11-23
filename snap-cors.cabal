@@ -1,6 +1,6 @@
-name:                snap-cors
+name:                snap-core-cors
 version:             1.2.9
-synopsis:            Add CORS headers to Snap applications
+synopsis:            Add CORS headers to Snap applications (snap-core-only fork)
 description:
   Add CORS (cross-origin resource sharing) headers to Snap applications. This
   enables web applications running on other domains to make requests against
@@ -10,12 +10,13 @@ description:
   @Access-Control-Allow-Origin@ and @Access-Control-Allow-Credentials@ headers,
   it does not yet do pre-flighting. If you need this, please open an issue on
   Github and I'll fix it ASAP (otherwise I will add this feature as time permits).
-
-homepage:            http://github.com/ocharles/snap-cors
+  .
+  Forked for narrowing deps to just snap-core, so no explicit snaplet support.
+homepage:            http://github.com/slpopejoy/snap-cors
 license:             BSD3
 license-file:        LICENSE
 author:              Oliver Charles
-maintainer:          ollie@ocharles.org.uk
+maintainer:          ollie@ocharles.org.uk,spopejoy@panix.com
 copyright:           Oliver Charles (c) 2013
 category:            Web
 build-type:          Simple
